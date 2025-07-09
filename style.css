@@ -172,22 +172,30 @@ a:hover {
     font-size: 1.25rem;
   }
 }
-.logo {
+ .logo {
   width: 50px;
   height: 50px;
   display: block;
-}
-[data-theme="dark"] .logo {
-  filter: brightness(0) invert(1);
-}
-.logo {
-  width: 50px;
-  height: 50px;
-  display: block;
-  transition: filter 0.3s;
+} 
+
+
+.whatsapp-share {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  transition: opacity 0.2s, transform 0.2s;
 }
 
-[data-theme="dark"] .logo {
-  -webkit-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1);
+.whatsapp-share img {
+  width: 40px;
+  height: 40px;
+}
+
+.whatsapp-share:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
 }
